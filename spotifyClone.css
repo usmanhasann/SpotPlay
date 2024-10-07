@@ -83,11 +83,7 @@
 i {
   text-decoration: none;
   background-color: #121212;
-
+  
 }
 
 /* library-section */
-
-.sidebar-content .library-section {
-  background-color: rgb(0, 140, 255);
-}
