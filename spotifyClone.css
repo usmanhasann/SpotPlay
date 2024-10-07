@@ -1,0 +1,28 @@
+* {
+  font-family: "Montserrat", sans-serif;
+  background-color: black;
+  color: white;
+  margin: 0;
+  padding: 0;
+}
+.main{
+ display: flex; 
+height: 100vh;
+}
+/* For spotplay sidebar content  */
+.sidebar-content{
+background-color: aqua;
+width: 18%;
+}
+/* For spotplay main content  */
+.main-content{
+background-color: blue;
+flex: 1;
+}
+/* For spotplay media section content  */
+.mediaplayer-sesction{
+background-color: brown;
+position: fixed;
+bottom: 0;
+
+}
