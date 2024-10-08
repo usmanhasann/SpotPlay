@@ -169,8 +169,10 @@ i {
 /*Spotplay main content  */
 .main-content {
   flex: 1;
-  /* border-radius: 1rem; */
-  /* overflow: auto; */
+  background-color: #121212;
+  opacity: 0.9;
+  border-radius: rem;
+  overflow: auto;
 }
 
 /* Sticky-nav */
@@ -189,6 +191,7 @@ height: 28px;
 width: 28px;
 padding: 3px;
 }
+
 /* Badge section */
 .nav-badge{
   display: flex;
@@ -239,11 +242,32 @@ margin-right: 1rem;
   }
 
 }
+/* Main-content & Display-Card-Area */
+.cards{
+  margin-left: 2rem;
+  background-color: #121212;
+  /* background-color: red; */
+}
+.card-item{
+  background-color: #232323;
+padding: 1rem;
+border-radius: 0.5rem;
+width: 150px;
+}
+/* Card-image */
 
-
-
-
-
+/*Card head & Disc  */
+.card-head{
+  font-size: 1rem;
+  padding: 0px 0px 4px;
+  width: 120px;
+  height: 30px;
+  font-weight: 600;
+}
+.card-disc{
+  font-size: 0.85rem;
+  opacity: 0.8;
+}
 
 
 
