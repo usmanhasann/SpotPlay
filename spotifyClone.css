@@ -105,11 +105,19 @@ justify-content: space-between;
 }
   /* Create playlist section */
 
-  .library-playlist{
+  .library-playlist {
 padding: 0.5rem 2.8rem;
 width: 220px;
 /* height: 100px; */
 height: 8rem;
+background-color: #232323;  
+border-radius: 0.75rem;   
+margin: 0.45rem 0 1.35rem 0;
+  }
+  .library-podcast{
+    padding: 0.5rem 2.8rem;
+width: 220px;
+height: 10.4rem;
 background-color: #232323;  
 border-radius: 0.75rem;   
 margin: 0.45rem 0 1.35rem 0;
@@ -123,6 +131,17 @@ margin: 0.45rem 0 1.35rem 0;
   opacity: 0.9;
 }
 .library-playlist button{
+  background-color: white;
+  font-weight: 700;
+  font-size: 12px;
+  padding: 0.25rem 1rem;
+  font-weight: 700;
+  border: none;
+  border-radius:100px;
+height: 2rem;
+
+}
+.library-podcast button{
   background-color: white;
   font-weight: 700;
   font-size: 12px;
