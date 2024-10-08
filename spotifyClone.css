@@ -183,6 +183,7 @@ i {
   padding:1rem 0 1rem 0;
 position: sticky;
 top: 0;
+z-index: 10;
 background-color: #121212;
 }
 .nav-arrow img{
@@ -246,15 +247,22 @@ margin-right: 1rem;
 .cards{
   margin-left: 2rem;
   background-color: #121212;
-  /* background-color: red; */
 }
 .card-item{
   background-color: #232323;
 padding: 1rem;
 border-radius: 0.5rem;
 width: 150px;
+margin-left: 1.5rem;
+margin-top: 1rem;
 }
-/* Card-image */
+
+/* Arranging-cards */
+.card-list-below{
+display: flex;
+flex-wrap: wrap;
+}
+
 
 /*Card head & Disc  */
 .card-head{
@@ -269,7 +277,18 @@ width: 150px;
   opacity: 0.8;
 }
 
-
+/* Main-content-footer-line */
+.footer{
+  height: 250px;
+  width: 90%;
+  justify-content: center;
+  align-items: center;
+}
+.line{
+  border-top: white 1px solid;
+  opacity: 0.4;
+  margin-top: 8rem;
+}
 
 
 
