@@ -246,15 +246,22 @@ margin-right: 1rem;
 .cards{
   margin-left: 2rem;
   background-color: #121212;
-  /* background-color: red; */
 }
 .card-item{
   background-color: #232323;
 padding: 1rem;
 border-radius: 0.5rem;
 width: 150px;
+margin-left: 1.5rem;
+margin-top: 1rem;
 }
-/* Card-image */
+
+/* Arranging-cards */
+.card-list-below{
+display: flex;
+flex-wrap: wrap;
+}
+
 
 /*Card head & Disc  */
 .card-head{
