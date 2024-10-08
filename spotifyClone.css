@@ -169,7 +169,9 @@ i {
 /*Spotplay main content  */
 .main-content {
   flex: 1;
-  /* border-radius: 1rem; */
+  background-color: #121212;
+  opacity: 0.9;
+  border-radius: rem;
   /* overflow: auto; */
 }
 
@@ -189,6 +191,7 @@ height: 28px;
 width: 28px;
 padding: 3px;
 }
+
 /* Badge section */
 .nav-badge{
   display: flex;
@@ -239,10 +242,28 @@ margin-right: 1rem;
   }
 
 }
+/* Main-content & Display-Card-Area */
+.cards{
+  margin-left: 2rem;
+  background-color: #121212;
+  /* background-color: red; */
 
+}
+.card-item{
+  margin-bottom: 8px;
+  background-color: red;
+  width: 212px;
+  height: 302px;
+}
+/* Card-image */
 
-
-
+/*Card head & Disc  */
+.card-head{
+  font-size: 1rem;
+  pad: 0px 0px 4px;
+  width: 120px;
+  height: 30px;
+}
 
 
 
