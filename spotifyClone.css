@@ -183,6 +183,7 @@ i {
   padding:1rem 0 1rem 0;
 position: sticky;
 top: 0;
+z-index: 10;
 background-color: #121212;
 }
 .nav-arrow img{
@@ -276,7 +277,18 @@ flex-wrap: wrap;
   opacity: 0.8;
 }
 
-
+/* Main-content-footer-line */
+.footer{
+  height: 250px;
+  width: 90%;
+  justify-content: center;
+  align-items: center;
+}
+.line{
+  border-top: white 1px solid;
+  opacity: 0.4;
+  margin-top: 8rem;
+}
 
 
 
