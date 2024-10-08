@@ -166,12 +166,95 @@ i {
   height: 2rem;
 
 }
-/* For spotplay main content  */
+/*Spotplay main content  */
 .main-content {
   flex: 1;
-  border-radius: 1rem;
-  overflow: auto;
+  /* border-radius: 1rem; */
+  /* overflow: auto; */
 }
+
+/* Sticky-nav */
+.sticky-nav{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding:1rem 0 1rem 0;
+position: sticky;
+top: 0;
+background-color: #121212;
+}
+.nav-arrow img{
+margin-left: 0.75rem;
+height: 28px;
+width: 28px;
+padding: 3px;
+}
+/* Badge section */
+.nav-badge{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.nav-badge .premium-badge{
+  background-color: white;
+  font-weight: 700;
+  font-size: 12px;
+  padding: 0.25rem 1rem;
+  font-weight: 700;
+  border: none;
+  border-radius: 100px;
+  height: 2rem;
+}
+.installApp-badge{
+  background-color: black;
+color: white;
+  font-weight: 700;
+  font-size: 12px;
+  padding: 0.25rem 1rem;
+  font-weight: 700;
+  border: none;
+  border-radius: 100px;
+  height: 2rem;
+}
+.nav-badge  i{
+  background-color: #121212;
+  font-size: 0.8rem;
+
+}
+.hide{
+  background-color: #000000;
+  border: none;
+  border-radius: 50%;
+}
+
+.nav-item{
+margin-right: 1rem;
+
+}
+/* Mediaquerry back-forward-icon */
+@media(max-width:750px){
+  .hide{
+   display: none;
+  }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /* For spotplay media section content  */
 .mediaplayer-section {

@@ -60,14 +60,18 @@
     <div class="main-content">
       <!-- Sticky-nav-->
       <div class="sticky-nav">
-        <img src="./assets/backward_icon.png" alt="backward_icon">
-        <img src="./assets//forward_icon.png" alt="forward_icon">
-        <button class="badge">Explore Premium</button>
+        <div class="nav-arrow">
+          <img src="./assets/backward_icon.png" alt="backward_icon" class="hide">
+          <img src="./assets//forward_icon.png" alt="forward_icon" class="hide">
+        </div>
+        <div class="nav-badge">
 
-        <button class="badge"><i class="fa-regular fa-circle-down"></i>Install App</button>
+          <button class="premium-badge nav-item">Explore Premium</button>
 
-
-
+          <button class="installApp-badge nav-item"><i class="fa-regular fa-circle-down"
+              style="margin-right: 5px;"></i>Install App</button>
+          <i class="fa-regular fa-user nav-item nav-user"></i>
+        </div>
       </div>
       <div class="cards"></div>
 
