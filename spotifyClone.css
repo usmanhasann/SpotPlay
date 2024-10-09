@@ -280,14 +280,15 @@ flex-wrap: wrap;
 /* Main-content-footer-line */
 .footer{
   height: 250px;
-  width: 90%;
+  width: 95%;
+  margin-left: 0.5rem;
   justify-content: center;
   align-items: center;
 }
 .line{
   border-top: white 1px solid;
   opacity: 0.4;
-  margin-top: 8rem;
+  margin-top: 10rem;
 }
 
 
