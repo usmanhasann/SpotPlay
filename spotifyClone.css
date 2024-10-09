@@ -350,13 +350,49 @@ opacity: 1;
 
 /* Media-player-bar */
 .p2{
-  
   width: 50%;
-
+  margin-bottom: 8px;
+  gap: 16px;
+  flex-flow: row nowrap;
+  
 }  
 .media-player-btns{
-  background-color: red;
+  display: flex;
+  justify-content: center;
+  margin-top: 0.5rem;
 }
+.play-icon img{
+  height: 1rem;
+  margin-right: 2rem;
+  margin-top: 1rem;
+height: 0.9rem;
+width: 0.9rem;
+opacity: 0.7;
+cursor: pointer;
+}
+/* play-pause-btn */
+.play-icon3 img{
+margin-right: 2.1rem;
+margin-top: 0.4rem;
+cursor: pointer;
+  
+}
+.play-icon img:hover{
+  opacity: 1;
+
+}
+/* Media-progress-bar */
+.media-bar-visual{
+  display: flex;
+  justify-content: center;
+    width: 100%;
+    margin-top: 1rem;
+}
+
+input[type="range"] {
+  width:400px;
+}
+
 
 /* volume & resize btn etc */
 .p3{
