@@ -291,20 +291,20 @@ flex-wrap: wrap;
   margin-top: 10rem;
 }
 
-
-
-
-
-
-
-
-
-
 /* For spotplay media section content  */
-.mediaplayer-section {
-  background-color: #000000;
+.media-player-main {
+  /* background-color: #000000; */
+  background-color: red;
   position: fixed;
   bottom: 0;
   width: 100%;
-  height: 25px;
+  height: 125px;
 }
+
+
+
+
+
+
+
+
