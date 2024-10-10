@@ -19,7 +19,6 @@ body {
   width: 340px;
   border-radius: 1rem;
   background-color: #000000;
-  /*TODO: 1rem = 16px */
   margin-right: 0.5rem;
 
 }
@@ -52,7 +51,8 @@ body {
 
 .home-section .home i {
   font-size: 1.25rem;
-  padding-top: 1rem;
+  padding-top: 0.1rem;
+  cursor: pointer;
 }
 
 .home-section .home a {
@@ -88,6 +88,7 @@ i {
   height: 1.25rem;
   width: 1.25rem;
   margin-right: 11px;
+  cursor: pointer;
 }
 
 .Your-library a {
@@ -106,6 +107,7 @@ i {
   margin-right: 1rem;
   opacity: 0.7;
   margin-top: 0.8rem;
+  cursor: pointer;
 }
 
 .side-icons i:hover {
@@ -117,31 +119,36 @@ i {
 .library-playlist {
   padding: 0.5rem 2.8rem;
   width: 220px;
-  /* height: 100px; */
   height: 8rem;
   background-color: #232323;
   border-radius: 0.75rem;
-  margin: 0.45rem 0 1.35rem 0;
+  margin: 0.1rem 0 1.35rem 0;
 }
 
 .library-podcast {
-  padding: 0.5rem 2.8rem;
+  padding: 1px 2.8rem;
   width: 220px;
-  height: 10.4rem;
+  height: 9rem;
   background-color: #232323;
   border-radius: 0.75rem;
-  margin: 0.45rem 0 1.35rem 0;
+  margin: 0.1rem 0 1.35rem 0;
 }
-
 .heading {
   font-size: 1rem;
   font-weight: 500;
 }
 
 .disc {
-  font-size: 17px;
+  font-size: 15px;
   opacity: 0.9;
 }
+.pod-disc{
+  margin: 0.2rem;
+}
+.badge2{
+  margin-top: 0.6rem;
+}
+
 
 .library-playlist button {
   background-color: white;
@@ -152,19 +159,18 @@ i {
   border: none;
   border-radius: 100px;
   height: 2rem;
-
+cursor: pointer;
 }
 
 .library-podcast button {
   background-color: white;
-  font-weight: 700;
   font-size: 12px;
   padding: 0.25rem 1rem;
   font-weight: 700;
   border: none;
+  cursor: pointer;
   border-radius: 100px;
   height: 2rem;
-
 }
 /*Spotplay main content  */
 .main-content {
@@ -209,6 +215,11 @@ padding: 3px;
   border: none;
   border-radius: 100px;
   height: 2rem;
+  cursor: pointer;
+  opacity: 1;
+}
+.nav-badge .premium-badge:hover{
+  opacity: 0.8;
 }
 .installApp-badge{
   background-color: black;
@@ -218,12 +229,14 @@ color: white;
   padding: 0.25rem 1rem;
   font-weight: 700;
   border: none;
+  cursor: pointer;
   border-radius: 100px;
   height: 2rem;
 }
 .nav-badge  i{
   background-color: #121212;
   font-size: 0.8rem;
+  cursor: pointer;
 
 }
 .hide{
@@ -242,6 +255,7 @@ margin-right: 1rem;
    display: none;
   }
 
+
 }
 /* Main-content & Display-Card-Area */
 .cards{
@@ -255,8 +269,15 @@ border-radius: 0.5rem;
 width: 150px;
 margin-left: 1.5rem;
 margin-top: 1rem;
+cursor: pointer;
 }
-
+/* Hover-apply */
+.card-item{
+  opacity: 0.8;
+}
+.card-item:hover{
+  opacity: 1;
+}
 /* Arranging-cards */
 .card-list-below{
 display: flex;
@@ -272,9 +293,17 @@ flex-wrap: wrap;
   height: 30px;
   font-weight: 600;
 }
+.card-head:hover{
+  text-decoration: underline;
+  
+}
 .card-disc{
   font-size: 0.85rem;
   opacity: 0.8;
+}
+.card-disc:hover{
+  text-decoration: underline;
+  
 }
 
 /* Main-content-footer-line */
@@ -351,9 +380,9 @@ opacity: 1;
 /* Media-player-bar */
 .p2{
   width: 50%;
-  margin-bottom: 8px;
-  gap: 16px;
-  flex-flow: row nowrap;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
   
 }  
 .media-player-btns{
@@ -385,17 +414,42 @@ cursor: pointer;
 .media-bar-visual{
   display: flex;
   justify-content: center;
+  align-items: center;
+  gap: 10px;
     width: 100%;
-    margin-top: 1rem;
+    height: 15px;
 }
+.time {
+  font-size: 12px;
 
-input[type="range"] {
-  width:400px;
 }
-
-
+ 
 /* volume & resize btn etc */
 .p3{
   width: 25%;
-  background-color: aqua;
+}
+
+.progress-bar{
+  width: 67.1%;
+  display: flex;
+  align-items: center;
+
+}
+input[type="range"] {
+  width:100%;
+  appearance: none;
+  background-color: transparent;
+}
+input[type="range"]::-webkit-slider-runnable-track{
+background-color: #ddd;
+border-radius: 100px;
+height: 0.2rem;
+}
+input[type="range"]::-webkit-slider-thumb{
+appearance: none;
+height: 1rem;
+width: 1rem;
+background-color: #1bd670;
+border-radius: 40%;
+margin-top: -6px;
 }
