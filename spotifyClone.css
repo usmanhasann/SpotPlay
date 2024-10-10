@@ -280,30 +280,122 @@ flex-wrap: wrap;
 /* Main-content-footer-line */
 .footer{
   height: 250px;
-  width: 90%;
+  width: 95%;
+  margin-left: 0.5rem;
   justify-content: center;
   align-items: center;
 }
 .line{
   border-top: white 1px solid;
   opacity: 0.4;
-  margin-top: 8rem;
+  margin-top: 10rem;
 }
 
-
-
-
-
-
-
-
-
-
 /* For spotplay media section content  */
-.mediaplayer-section {
+.media-player-main {
   background-color: #000000;
   position: fixed;
   bottom: 0;
   width: 100%;
-  height: 25px;
+  height: 5.6rem;
+  display: flex;
+}
+
+/* img & songName & add btn*/
+.p1{
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: row;
+  width: 25%;
+  min-width: 180px;
+  margin-top: 0.9rem;
+  
+}  
+
+.p1 img{
+isolation: isolate;
+position: relative;
+border-radius: 8px;
+}
+ .p1 a{
+  text-decoration: none;
+  color: white;
+  
+ }
+ .p1 a:hover{
+  text-decoration: underline;
+
+ }
+.author a{
+opacity: 0.7;
+font-size: 11px;
+}
+.song-name a{
+  font-size: 13px;
+  font-weight: 600;
+}
+.song-disc{
+  margin-left: 1rem;
+}
+.add-btn i{
+  margin-left: 2rem;
+  margin-bottom: 0.6rem;
+opacity: 0.7;
+cursor: pointer;
+}
+.add-btn i:hover{
+opacity: 1;
+}
+
+/* Media-player-bar */
+.p2{
+  width: 50%;
+  margin-bottom: 8px;
+  gap: 16px;
+  flex-flow: row nowrap;
+  
+}  
+.media-player-btns{
+  display: flex;
+  justify-content: center;
+  margin-top: 0.5rem;
+}
+.play-icon img{
+  height: 1rem;
+  margin-right: 2rem;
+  margin-top: 1rem;
+height: 0.9rem;
+width: 0.9rem;
+opacity: 0.7;
+cursor: pointer;
+}
+/* play-pause-btn */
+.play-icon3 img{
+margin-right: 2.1rem;
+margin-top: 0.4rem;
+cursor: pointer;
+  
+}
+.play-icon img:hover{
+  opacity: 1;
+
+}
+/* Media-progress-bar */
+.media-bar-visual{
+  display: flex;
+  justify-content: center;
+    width: 100%;
+    margin-top: 1rem;
+}
+
+input[type="range"] {
+  width:400px;
+}
+
+
+/* volume & resize btn etc */
+.p3{
+  width: 25%;
+  background-color: aqua;
 }
